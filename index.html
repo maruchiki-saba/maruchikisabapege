@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>まるきち鯖 公式サイト</title>
   <style>
+    /* 全体背景をピンクに設定 */
     body { 
-      font-family: sans-serif; 
-      background-color: #36393f; 
-      color: #ffffff; 
+      font-family: 'Hiragino Maru Gothic ProN', 'Meiryo UI', sans-serif; 
+      background-color: #ffdeeb; 
+      color: #4a3e3d; 
       padding: 40px 20px;
       max-width: 700px;
       margin: 0 auto;
@@ -18,91 +19,118 @@
       text-align: center;
       margin-bottom: 30px;
     }
-    h1 { color: #5865f2; margin-bottom: 5px; }
-    .welcome-msg { font-size: 1.1rem; color: #00ebba; font-weight: bold; }
+    h1 { 
+      color: #ff5e97; 
+      margin-bottom: 5px; 
+      text-shadow: 2px 2px 0px #ffffff;
+      font-size: 2rem;
+    }
+    .welcome-msg { 
+      font-size: 1.1rem; 
+      color: #ff3377; 
+      font-weight: bold; 
+    }
     
+    /* 文字の入る箱（カード）をイエロー背景＆丸角に */
     .card {
-      background-color: #2f3136;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
+      background-color: #fffde6;
+      border: 3px solid #ffe680;
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.15);
     }
     .rules-card {
-      border: 2px solid #5865f2;
+      background-color: #fff9d6;
+      border: 3px dashed #ffb3d9;
     }
     h2 { 
-      color: #5865f2; 
-      font-size: 1.2rem;
-      border-bottom: 1px solid #4f545c;
+      color: #ff6699; 
+      font-size: 1.25rem;
+      border-bottom: 2px dotted #ffb3cc;
       padding-bottom: 8px;
       margin-top: 0;
     }
     .rule-item {
-      background-color: #202225;
-      padding: 10px 14px;
-      border-radius: 5px;
+      background-color: #ffffff;
+      border: 2px solid #ffe066;
+      color: #4a3e3d;
+      padding: 10px 16px;
+      border-radius: 15px;
       margin-bottom: 10px;
       font-weight: bold;
     }
     .admin-list { 
-      color: #00ebba; 
+      color: #ff3377; 
       font-weight: bold; 
     }
     ul { padding-left: 20px; }
     li { margin-bottom: 8px; }
     code {
-      background-color: #202225;
-      padding: 2px 6px;
-      border-radius: 4px;
-      color: #f6c445;
+      background-color: #fff3a3;
+      padding: 2px 8px;
+      border-radius: 10px;
+      color: #d97706;
+      font-weight: bold;
     }
     
+    /* 同意エリアも丸角＆イエロー背景 */
     .agree-box {
       margin-top: 30px;
       padding: 25px;
-      background-color: #202225;
-      border-radius: 8px;
+      background-color: #fffde6;
+      border: 3px solid #ffe680;
+      border-radius: 20px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.15);
     }
     .agree-label {
       font-size: 1.05rem;
       cursor: pointer;
       display: inline-block;
       margin-bottom: 15px;
+      font-weight: bold;
+      color: #ff4d88;
     }
     .btn-join {
       display: inline-block;
-      padding: 14px 28px;
-      background-color: #5865f2;
+      padding: 14px 30px;
+      background-color: #ff6699;
       color: #ffffff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 30px;
       font-weight: bold;
       font-size: 1.1rem;
       pointer-events: none;
-      opacity: 0.3;
+      opacity: 0.4;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 0px #cc3366;
     }
     /* チェックを入れるとボタンを有効化 */
     #agree-check:checked ~ .btn-join {
       pointer-events: auto;
       opacity: 1;
     }
-    .btn-join:hover { background-color: #4752c4; }
+    .btn-join:hover { 
+      background-color: #ff3377;
+      transform: translateY(2px);
+      box-shadow: 0 2px 0px #cc3366;
+    }
 
     .footer-msg {
       text-align: center;
       font-size: 1.3rem;
       font-weight: bold;
-      color: #00ebba;
+      color: #ff3377;
       margin-top: 40px;
+      text-shadow: 1px 1px 0px #ffffff;
     }
   </style>
 </head>
 <body>
 
   <div class="header">
-    <h1>まるきち鯖のはじめてガイド！</h1>
+    <h1>🎀 まるきち鯖のはじめてガイド！ 🎀</h1>
     <p class="welcome-msg">新規さん、いらっしゃいませ☆<br>このサーバーの案内をしていくよ☆</p>
   </div>
 
@@ -120,7 +148,7 @@
       <li><strong>「ぴーなつ、りんご、りんごあめ」</strong> → いいね☆、最高</li>
       <li><strong>「ぱいなぽーみかん」</strong> → うーん</li>
     </ul>
-    <p>でも実際は、<strong>意味とかあんまる考えてないかも☆</strong><br>
+    <p>でも実際は、<strong>意味とかあんまり考えてないかも☆</strong><br>
     他にも色々あるからわかんなかったら気軽に聞いてね☆</p>
   </div>
 
@@ -138,7 +166,7 @@
     <div class="rule-item">2. 嫌なことをしない</div>
     <div class="rule-item">3. 迷惑行為をしない</div>
     <div class="rule-item">4. 嫌な事があったら管理人に言う</div>
-    <p style="padding-left: 5px; color: #dcddde;">管理者: <span class="admin-list">ちいはや、こなた、たこ</span></p>
+    <p style="padding-left: 5px; color: #665555;">管理者: <span class="admin-list">ちいはや、こなた、たこ</span></p>
   </div>
 
   <!-- 同意・参加エリア -->
